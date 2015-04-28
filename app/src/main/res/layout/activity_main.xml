@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Acil Durumlar"
-        android:id="@+id/button"
+        android:id="@+id/acilDurumButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -18,9 +18,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:text="Text to Speech"
+        android:id="@+id/textToSpeechButton"
+        android:layout_alignTop="@+id/acilDurumButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

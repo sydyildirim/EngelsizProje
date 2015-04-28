@@ -12,13 +12,15 @@ import android.widget.Button;
 public class MainActivity extends ActionBarActivity {
 
     private Button acilDurumButton;
+    private Button textToSpeechButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        acilDurumButton = (Button) findViewById(R.id.button);
+        acilDurumButton = (Button) findViewById(R.id.acilDurumButton);
+        textToSpeechButton = (Button) findViewById(R.id.textToSpeechButton);
 
         acilDurumButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -28,6 +30,16 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
+        textToSpeechButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, TextToSpeechActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
 

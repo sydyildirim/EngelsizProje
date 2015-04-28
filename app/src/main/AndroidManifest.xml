@@ -20,6 +20,10 @@
             android:name=".AcilDurumActivity"
             android:label="@string/title_activity_acil_durum" >
         </activity>
+        <activity
+            android:name=".TextToSpeechActivity"
+            android:label="@string/title_activity_text_to_speech" >
+        </activity>
     </application>
 
 </manifest>
